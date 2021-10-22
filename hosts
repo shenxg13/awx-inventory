@@ -1,9 +1,9 @@
 [jump]
-192.168.220.84 _awx_description='host var'
+192.168.220.84 _awx_description='host参数'
 
 [jump:vars]
 ansible_ssh_common_args='-o ProxyCommand="ssh -o StrictHostKeyChecking=no -W %h:%p -q ansible@192.168.0.83"'
-_awx_description='group var'
+_awx_description='group参数'
 
 [direct]
 192.168.0.80
