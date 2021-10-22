@@ -1,6 +1,9 @@
 [jump]
 192.168.220.84
 
+[jump:vars]
+ansible_ssh_common_args='-o ProxyCommand="ssh -o StrictHostKeyChecking=no -W %h:%p -q ansible@192.168.0.83"'
+
 [direct]
 192.168.0.80
 192.168.0.81
